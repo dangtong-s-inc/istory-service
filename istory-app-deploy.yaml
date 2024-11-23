@@ -28,7 +28,7 @@ spec:
                     'until mysqladmin ping -u dangtong -p${MYSQL_PASSWORD} -h mysql-svc.default; do echo waiting for database; sleep 2; done;']
       containers:
         - name: istory
-          image: dangtong/istory:11
+          image: dangtong/istory:12
           envFrom:
             - configMapRef:
                 name: istory-app-config
